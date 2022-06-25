@@ -106,3 +106,6 @@ if [[ -f "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" ]]; t
 
 # Poetry
 export PATH="$PATH:$HOME/.poetry/bin"
+
+# Nix
+if [[ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi

@@ -1,8 +1,5 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/toxe/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -73,15 +70,15 @@ plugins=(git colored-man-pages zsh-autosuggestions zsh-completions virtualenv po
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
 setopt noshare_history
 setopt rm_star_silent
 
 source ~/.zsh_functions/vcpkg-install
 
-export MANPATH="/opt/local/share/man:$MANPATH"
 export LANG=en_US.UTF-8
 export EDITOR=vim
+
+if [[ -d /opt/local/share/man ]]; then export MANPATH="/opt/local/share/man:$MANPATH"; fi
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -100,3 +97,12 @@ autoload -U compinit && compinit
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ZLE_RPROMPT_INDENT=0
+
+# MacPorts
+if [[ -d /opt/local/bin ]]; then export PATH="/opt/local/bin:/opt/local/sbin:$PATH"; fi
+
+# Visual Studio Code
+if [[ -f "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" ]]; then export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"; fi
+
+# Poetry
+export PATH="$PATH:$HOME/.poetry/bin"

@@ -1,3 +1,5 @@
+umask 022
+
 set -gx EDITOR vim
 set -gx LANG en_US.UTF-8
 

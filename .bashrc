@@ -21,6 +21,9 @@ if [ -f /etc/bash_completion ]; then
  . /etc/bash_completion
 fi
 
+# dotfiles
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 # MacPorts
 if [[ -d /opt/local/bin ]]; then export PATH="/opt/local/bin:/opt/local/sbin:$PATH"; fi
 

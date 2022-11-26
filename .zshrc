@@ -90,7 +90,6 @@ if [[ -d /opt/local/share/man ]]; then export MANPATH="/opt/local/share/man:$MAN
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # zsh-completions
 autoload -U compinit && compinit
@@ -99,6 +98,9 @@ autoload -U compinit && compinit
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ZLE_RPROMPT_INDENT=0
+
+# dotfiles
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # MacPorts
 if [[ -d /opt/local/bin ]]; then export PATH="/opt/local/bin:/opt/local/sbin:$PATH"; fi

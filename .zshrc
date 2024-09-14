@@ -3,7 +3,7 @@ setopt no_beep
 setopt no_list_beep
 
 # history
-HISTFILE=$HOME/.zhistfile
+HISTFILE=$HOME/.zhistory
 HISTSIZE=10000
 SAVEHIST=10000
 

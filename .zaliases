@@ -1,2 +1,7 @@
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ll='ls -l'
+
+# Debian only
+if [[ -f /etc/debian_version ]]; then
+	alias bat=batcat
+fi

@@ -19,6 +19,10 @@ bindkey -e
 # aliases
 . $HOME/.zaliases
 
+# functions
+fpath=(~/.zfunctions $fpath)
+autoload ${fpath[1]}/*(:t)
+
 # autocompletion
 autoload -Uz compinit
 compinit

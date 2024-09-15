@@ -1,5 +1,8 @@
+eza_params=(--git --group --group-directories-first --time-style=long-iso --color-scale=all --icons)
+
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias ll='ls -l'
+alias ls='eza $eza_params'
+alias ll='eza $eza_params -l'
 
 # Debian only
 if [[ -f /etc/debian_version ]]; then

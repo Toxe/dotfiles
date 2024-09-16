@@ -11,6 +11,7 @@ set encoding=utf-8
 
 syntax on
 filetype on
+colorscheme koehler
 
 " Jump to last cursor position when reopening a file
 if has("autocmd")

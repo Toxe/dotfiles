@@ -17,15 +17,14 @@ setopt inc_append_history
 setopt no_hist_beep
 
 # aliases
-. $HOME/.zaliases
+source $HOME/.zaliases
 
 # functions
 fpath=(~/.zfunctions $fpath)
 autoload ${fpath[1]}/*(:t)
 
 # completion
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
 
 # plugins
 export ZPLUGINSDIR=~/.zplugins
@@ -40,7 +39,7 @@ plugins=(
 plugins-load $plugins
 
 # fzf
-. <(fzf --zsh)
+source <(fzf --zsh)
 
 # key bindings
 bindkey -e

@@ -32,6 +32,15 @@ autoload -Uz promptinit
 promptinit
 prompt walters
 
+# plugins
+ZPLUGINSDIR=~/.zplugins
+
+plugins=(
+	zsh-users/zsh-syntax-highlighting
+)
+
+plugins-load $plugins
+
 # key bindings
 bindkey -e
 bindkey '^[[1;5D' backward-word           # Ctrl+Left

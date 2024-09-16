@@ -3,12 +3,12 @@ setopt no_beep
 setopt no_list_beep
 
 # what non-alphanumeric characters are also considered parts of words?
-WORDCHARS="_"    # default: *?_-.[]~=/&;!#$%^(){}<>
+export WORDCHARS="_"    # default: *?_-.[]~=/&;!#$%^(){}<>
 
 # history
-HISTFILE=$HOME/.zhistory
-HISTSIZE=10000
-SAVEHIST=10000
+export HISTFILE=$HOME/.zhistory
+export HISTSIZE=10000
+export SAVEHIST=10000
 
 setopt hist_ignore_all_dups
 setopt hist_reduce_blanks
@@ -33,7 +33,7 @@ promptinit
 prompt walters
 
 # plugins
-ZPLUGINSDIR=~/.zplugins
+export ZPLUGINSDIR=~/.zplugins
 
 plugins=(
 	zsh-users/zsh-syntax-highlighting

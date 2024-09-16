@@ -2,6 +2,9 @@
 setopt no_beep
 setopt no_list_beep
 
+# what non-alphanumeric characters are also considered parts of words?
+WORDCHARS="_"    # default: *?_-.[]~=/&;!#$%^(){}<>
+
 # history
 HISTFILE=$HOME/.zhistory
 HISTSIZE=10000

@@ -43,6 +43,9 @@ plugins=(
 
 plugins-load $plugins
 
+# fzf
+. <(fzf --zsh)
+
 # key bindings
 bindkey -e
 bindkey '^[[1;5D' backward-word                    # Ctrl+Left

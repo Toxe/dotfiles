@@ -27,11 +27,6 @@ autoload ${fpath[1]}/*(:t)
 autoload -Uz compinit
 compinit
 
-# prompt
-autoload -Uz promptinit
-promptinit
-prompt walters
-
 # plugins
 export ZPLUGINSDIR=~/.zplugins
 
@@ -39,6 +34,7 @@ plugins=(
 	zsh-users/zsh-autosuggestions
 	zsh-users/zsh-history-substring-search
 	zdharma-continuum/fast-syntax-highlighting
+	romkatv/powerlevel10k
 )
 
 plugins-load $plugins
@@ -57,3 +53,6 @@ bindkey '^H'      backward-delete-word             # Ctrl+Backspace
 bindkey '^Z'      undo                             # Ctrl+Z
 bindkey '^[OA'    history-substring-search-up      # Up
 bindkey '^[OB'    history-substring-search-down    # Down
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

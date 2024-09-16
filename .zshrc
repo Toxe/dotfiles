@@ -13,9 +13,6 @@ setopt hist_save_no_dups
 setopt inc_append_history
 setopt no_hist_beep
 
-# key bindings
-bindkey -e
-
 # aliases
 . $HOME/.zaliases
 
@@ -23,7 +20,7 @@ bindkey -e
 fpath=(~/.zfunctions $fpath)
 autoload ${fpath[1]}/*(:t)
 
-# autocompletion
+# completion
 autoload -Uz compinit
 compinit
 
@@ -31,3 +28,13 @@ compinit
 autoload -Uz promptinit
 promptinit
 prompt walters
+
+# key bindings
+bindkey -e
+bindkey '^[[1;5D' backward-word           # Ctrl+Left
+bindkey '^[[1;5C' forward-word            # Ctrl+Right
+bindkey '^K'      kill-line               # Ctrl+K
+bindkey '^U'      backward-kill-line      # Ctrl+U
+bindkey '^[[3;5~' delete-word             # Ctrl+Delete
+bindkey '^H'      backward-delete-word    # Ctrl+Backspace
+bindkey '^Z'      undo                    # Ctrl+Z

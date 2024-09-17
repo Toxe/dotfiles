@@ -1,6 +1,10 @@
-eza_params=(--git --group --group-directories-first --time-style=long-iso --color-scale=all --icons)
-
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# eza: only add "--git" if it is supported
+eza_params=(--group --group-directories-first --time-style=long-iso --color-scale=all --icons)
+
+[[ $(eza --version) == *+git* ]] && eza_params=($eza_params --git)
+
 alias ls='eza $eza_params'
 alias ll='eza $eza_params -l'
 

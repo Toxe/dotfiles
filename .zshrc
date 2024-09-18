@@ -40,6 +40,7 @@ plugins-load $plugins
 
 # fzf
 source <(fzf --zsh)
+export FZF_DEFAULT_OPTS='--border --tmux center,75%,50%'
 
 # key bindings
 bindkey -e

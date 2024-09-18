@@ -36,7 +36,6 @@
     vcs                     # git status
     # =========================[ Line #2 ]=========================
     newline                 # \n
-status
     prompt_char             # prompt symbol
   )
 

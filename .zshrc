@@ -32,6 +32,7 @@ export ZPLUGINSDIR=~/.zplugins
 plugins=(
 	Aloxaf/fzf-tab
 	zsh-users/zsh-autosuggestions
+	zsh-users/zsh-completions
 	zsh-users/zsh-history-substring-search
 	zdharma-continuum/fast-syntax-highlighting
 	romkatv/powerlevel10k

@@ -19,6 +19,9 @@ setopt no_hist_beep
 # aliases
 source $HOME/.zaliases
 
+# improve run-help for certain commands
+autoload -Uz run-help-git run-help-ip run-help-sudo
+
 # functions
 fpath=(~/.zfunctions $fpath)
 autoload ${fpath[1]}/*(:t)

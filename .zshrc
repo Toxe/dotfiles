@@ -30,6 +30,7 @@ autoload -Uz compinit && compinit
 export ZPLUGINSDIR=~/.zplugins
 
 plugins=(
+	Aloxaf/fzf-tab
 	zsh-users/zsh-autosuggestions
 	zsh-users/zsh-history-substring-search
 	zdharma-continuum/fast-syntax-highlighting
@@ -38,9 +39,13 @@ plugins=(
 
 plugins-load $plugins
 
+# plugin: fzf-tab
+zstyle ':completion:*:git-checkout:*' sort false    # disable sort when completing git checkout
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup      # use tmux popups
+
 # fzf
 source <(fzf --zsh)
-export FZF_DEFAULT_OPTS='--border --tmux center,75%,50%'
+export FZF_DEFAULT_OPTS='--border --tmux center,75%,50%'    # use tmux popups
 
 # key bindings
 bindkey -e

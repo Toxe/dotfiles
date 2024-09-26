@@ -46,6 +46,7 @@ source <(fzf --zsh)
 export FZF_DEFAULT_OPTS='--border --tmux center,75%,50%'    # use tmux popups
 
 # completions
+fpath=($fpath $HOME/.zcompletions)
 autoload -Uz compinit && compinit
 
 # key bindings

@@ -23,9 +23,6 @@ source $HOME/.zaliases
 fpath=(~/.zfunctions $fpath)
 autoload ${fpath[1]}/*(:t)
 
-# completion
-autoload -Uz compinit && compinit
-
 # plugins
 export ZPLUGINSDIR=~/.zplugins
 
@@ -47,6 +44,9 @@ zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup      # use tmux popups
 # fzf
 source <(fzf --zsh)
 export FZF_DEFAULT_OPTS='--border --tmux center,75%,50%'    # use tmux popups
+
+# completions
+autoload -Uz compinit && compinit
 
 # key bindings
 bindkey -e

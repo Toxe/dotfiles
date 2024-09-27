@@ -2,6 +2,10 @@
 setopt no_beep
 setopt no_list_beep
 
+# colorize man pages
+export MANPAGER="less -R --use-color -Dd+B -Duy"
+export MANROFFOPT="-P -c"
+
 # what non-alphanumeric characters are also considered parts of words?
 export WORDCHARS="_"    # default: *?_-.[]~=/&;!#$%^(){}<>
 

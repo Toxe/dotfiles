@@ -21,9 +21,6 @@ setopt hist_save_no_dups
 setopt inc_append_history
 setopt no_hist_beep
 
-# aliases
-source $HOME/.zaliases
-
 # improve run-help for certain commands
 autoload -Uz run-help-git run-help-ip run-help-sudo
 
@@ -56,6 +53,9 @@ export FZF_DEFAULT_OPTS='--border --tmux center,75%,50%'    # use tmux popups
 # completions
 fpath=($fpath $HOME/.zcompletions)
 autoload -Uz compinit && compinit
+
+# aliases
+source $HOME/.zaliases
 
 # key bindings
 bindkey -e

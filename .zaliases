@@ -14,4 +14,6 @@ alias ll='eza $eza_params -l'
 if [[ -f /etc/debian_version ]]; then
 	alias bat=batcat
 	alias fd=fdfind
+
+	compdef _fd fdfind    # use _fd completion function for fdfind
 fi

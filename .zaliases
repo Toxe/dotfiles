@@ -13,4 +13,5 @@ alias ll='eza $eza_params -l'
 # Debian only
 if [[ -f /etc/debian_version ]]; then
 	alias bat=batcat
+	alias fd=fdfind
 fi

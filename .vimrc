@@ -8,6 +8,7 @@ set incsearch
 set hlsearch
 set vb t_vb=
 set encoding=utf-8
+set backspace=start
 
 syntax on
 filetype on

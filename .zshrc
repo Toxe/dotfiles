@@ -67,8 +67,11 @@ bindkey '^U'      backward-kill-line               # Ctrl+U
 bindkey '^[[3;5~' delete-word                      # Ctrl+Delete
 bindkey '^H'      backward-delete-word             # Ctrl+Backspace
 bindkey '^Z'      undo                             # Ctrl+Z
+bindkey '^[[3~'   delete-char                      # Delete
 bindkey '^[OA'    history-substring-search-up      # Up
 bindkey '^[OB'    history-substring-search-down    # Down
+bindkey '^[[1~'   beginning-of-line                # Home
+bindkey '^[[4~'   end-of-line                      # End
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

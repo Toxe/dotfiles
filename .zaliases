@@ -1,6 +1,7 @@
 alias cat='bat --paging=never --style=plain'
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias grep='grep --color=auto'
+alias vi=vim
 
 # eza: only add "--git" if it is supported
 eza_params=(--group --group-directories-first --time-style=long-iso --color-scale=all --icons)

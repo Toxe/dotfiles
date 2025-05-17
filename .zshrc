@@ -73,5 +73,8 @@ bindkey '^[OB'    history-substring-search-down    # Down
 bindkey '^[[1~'   beginning-of-line                # Home
 bindkey '^[[4~'   end-of-line                      # End
 
+# vim: automatically install color theme
+[ ! -d ~/.vim/pack/themes/start/dracula ] && (mkdir -p ~/.vim/pack/themes/start; git clone https://github.com/dracula/vim.git ~/.vim/pack/themes/start/dracula)
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

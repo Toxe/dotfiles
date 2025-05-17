@@ -11,7 +11,7 @@ set encoding=utf-8
 set backspace=start
 
 syntax on
-filetype on
+filetype plugin indent on
 colorscheme dracula
 
 " Jump to last cursor position when reopening a file

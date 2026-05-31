@@ -46,6 +46,10 @@ plugins-load $plugins
 zstyle ':completion:*:git-checkout:*' sort false    # disable sort when completing git checkout
 zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup      # use tmux popups
 
+# plugin: zsh-history-substring-search
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='fg=white,bold'
+export HISTORY_SUBSTRING_SEARCH_PREFIXED=true
+
 # fzf
 source <(fzf --zsh)
 export FZF_DEFAULT_OPTS='--border --tmux center,75%,50%'    # use tmux popups
@@ -72,8 +76,8 @@ bindkey '^[[3;5~' delete-word                      # Ctrl+Delete
 bindkey '^H'      backward-delete-word             # Ctrl+Backspace
 bindkey '^Z'      undo                             # Ctrl+Z
 bindkey '^[[3~'   delete-char                      # Delete
-bindkey '^[OA'    history-substring-search-up      # Up
-bindkey '^[OB'    history-substring-search-down    # Down
+bindkey '^[[A'    history-substring-search-up      # Up
+bindkey '^[[B'    history-substring-search-down    # Down
 bindkey '^[[1~'   beginning-of-line                # Home
 bindkey '^[[4~'   end-of-line                      # End
 

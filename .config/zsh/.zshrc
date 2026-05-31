@@ -57,6 +57,8 @@ fpath=($fpath $XDG_CONFIG_HOME/zsh/completions)
 autoload -Uz compinit && compinit -d $XDG_CACHE_HOME/zsh/zcompdump
 zstyle ":completion:*:commands" rehash true    # automatic rehash
 
+setopt complete_aliases
+
 # aliases
 source $XDG_CONFIG_HOME/zsh/aliases
 

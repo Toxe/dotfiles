@@ -78,5 +78,5 @@ bindkey '^[[4~'   end-of-line                      # End
 # vim: automatically install color theme
 [ ! -d $XDG_DATA_HOME/vim/pack/themes/start/dracula ] && (mkdir -p $XDG_DATA_HOME/vim/pack/themes/start; git clone --depth 1 https://github.com/dracula/vim.git $XDG_DATA_HOME/vim/pack/themes/start/dracula)
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/p10k.zsh.
 [[ ! -f $XDG_CONFIG_HOME/zsh/p10k.zsh ]] || source $XDG_CONFIG_HOME/zsh/p10k.zsh

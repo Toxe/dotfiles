@@ -52,19 +52,19 @@ white = "0xECEFF4"
 size = 10
 
 [font.normal]
-family = "MesloLGS NF"
+family = "MesloLGSNerdFont"
 style = "Regular"
 
 [font.bold]
-family = "MesloLGS NF"
+family = "MesloLGSNerdFont"
 style = "Bold"
 
 [font.italic]
-family = "MesloLGS NF"
+family = "MesloLGSNerdFont"
 style = "Italic"
 
 [font.bold_italic]
-family = "MesloLGS NF"
+family = "MesloLGSNerdFont"
 style = "Bold Italic"
 
 [selection]

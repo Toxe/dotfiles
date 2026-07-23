@@ -9,3 +9,5 @@
 	helper = !/usr/bin/gh auth git-credential
 [init]
 	defaultBranch = main
+[format]
+	pretty = %C(Yellow)%h %C(Green)%cr %C(reset)%s %C(Cyan)(%an)%C(auto)%d

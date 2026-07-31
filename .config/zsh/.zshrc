@@ -28,6 +28,15 @@ autoload -Uz run-help-git run-help-ip run-help-sudo
 fpath=($XDG_CONFIG_HOME/zsh/functions $fpath)
 autoload ${fpath[1]}/*(:t)
 
+# completions
+fpath=($fpath $XDG_CONFIG_HOME/zsh/completions)
+
+[ ! -d $XDG_CACHE_HOME/zsh ] && mkdir $XDG_CACHE_HOME/zsh
+autoload -Uz compinit && compinit -d $XDG_CACHE_HOME/zsh/zcompdump
+zstyle ":completion:*:commands" rehash true    # automatic rehash
+
+setopt complete_aliases
+
 # plugins
 export ZPLUGINSDIR=$XDG_STATE_HOME/zsh/plugins
 
@@ -53,15 +62,6 @@ export HISTORY_SUBSTRING_SEARCH_PREFIXED=true
 # fzf
 source <(fzf --zsh)
 export FZF_DEFAULT_OPTS='--border --tmux center,75%,50%'    # use tmux popups
-
-# completions
-fpath=($fpath $XDG_CONFIG_HOME/zsh/completions)
-
-[ ! -d $XDG_CACHE_HOME/zsh ] && mkdir $XDG_CACHE_HOME/zsh
-autoload -Uz compinit && compinit -d $XDG_CACHE_HOME/zsh/zcompdump
-zstyle ":completion:*:commands" rehash true    # automatic rehash
-
-setopt complete_aliases
 
 # aliases
 source $XDG_CONFIG_HOME/zsh/aliases

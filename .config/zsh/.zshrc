@@ -42,10 +42,10 @@ export ZPLUGINSDIR=$XDG_STATE_HOME/zsh/plugins
 
 plugins=(
 	Aloxaf/fzf-tab
+	zdharma-continuum/fast-syntax-highlighting
 	zsh-users/zsh-autosuggestions
 	zsh-users/zsh-completions
 	zsh-users/zsh-history-substring-search
-	zdharma-continuum/fast-syntax-highlighting
 	romkatv/powerlevel10k
 )
 

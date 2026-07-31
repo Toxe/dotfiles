@@ -68,18 +68,28 @@ source $XDG_CONFIG_HOME/zsh/aliases
 
 # key bindings
 bindkey -e
-bindkey '^[[1;5D' backward-word                    # Ctrl+Left
-bindkey '^[[1;5C' forward-word                     # Ctrl+Right
-bindkey '^K'      kill-line                        # Ctrl+K
-bindkey '^U'      backward-kill-line               # Ctrl+U
-bindkey '^[[3;5~' delete-word                      # Ctrl+Delete
-bindkey '^H'      backward-delete-word             # Ctrl+Backspace
-bindkey '^Z'      undo                             # Ctrl+Z
-bindkey '^[[3~'   delete-char                      # Delete
-bindkey '^[[A'    history-substring-search-up      # Up
-bindkey '^[[B'    history-substring-search-down    # Down
-bindkey '^[[1~'   beginning-of-line                # Home
-bindkey '^[[4~'   end-of-line                      # End
+bindkey "$terminfo[kRIT5]" forward-word                   # Ctrl+Right
+bindkey "$terminfo[kLFT5]" backward-word                  # Ctrl+Left
+bindkey "$terminfo[kdch1]" delete-char                    # Delete
+bindkey "$terminfo[kDC5]"  delete-word                    # Ctrl+Delete
+bindkey "$terminfo[kbs]"   backward-delete-char           # Backspace
+bindkey '^H'               backward-delete-word           # Ctrl+Backspace
+bindkey '^K'               kill-line                      # Ctrl+K
+bindkey '^U'               backward-kill-line             # Ctrl+U
+bindkey '^Z'               undo                           # Ctrl+Z
+bindkey "$terminfo[khome]" beginning-of-line              # Home
+bindkey "$terminfo[kend]"  end-of-line                    # End
+bindkey "$terminfo[kcuu1]" history-substring-search-up    # Up
+bindkey "$terminfo[kcud1]" history-substring-search-down  # Down
+
+# Make sure the terminal is in application mode, when zle is active. Only then are the values from $terminfo valid.
+if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
+	autoload -Uz add-zle-hook-widget
+	function zle_application_mode_start { echoti smkx }
+	function zle_application_mode_stop { echoti rmkx }
+	add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
+	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
+fi
 
 # vim: automatically install color theme
 [ ! -d $XDG_DATA_HOME/vim/pack/themes/start/dracula ] && (mkdir -p $XDG_DATA_HOME/vim/pack/themes/start; git clone --depth 1 https://github.com/dracula/vim.git $XDG_DATA_HOME/vim/pack/themes/start/dracula)

@@ -1,0 +1,33 @@
+{
+    "Effects": [
+        {
+            "AllowOnlyFirst": false,
+            "AutoStart": true,
+            "Brightness": 100,
+            "ControllerZones": [
+                {
+                    "description": "Corsair RGB Peripheral Device",
+                    "is_segment": false,
+                    "location": "HID: /dev/hidraw5",
+                    "name": "Corsair K70 LUX RGB",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "0B037024AEFE8106583BC062F5001941",
+                    "vendor": "Corsair",
+                    "version": "3.8",
+                    "zone_idx": 0
+                }
+            ],
+            "CustomName": "",
+            "EffectClassName": "RainbowWave",
+            "FPS": 3,
+            "RandomColors": false,
+            "Slider2Val": 10,
+            "Speed": 1,
+            "Temperature": 0,
+            "Tint": 0
+        }
+    ],
+    "version": 2
+}

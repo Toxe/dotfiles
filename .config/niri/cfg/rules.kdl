@@ -16,7 +16,10 @@
        open-focused false
     }
 
-    layer-rule {
-        match namespace="^noctalia-wallpaper*"
-        place-within-backdrop true
+    // floating Noctalia settings window
+    window-rule {
+        match app-id="dev.noctalia.Noctalia"
+        open-floating true
+        default-column-width { fixed 1080; }
+        default-window-height { fixed 920; }
     }

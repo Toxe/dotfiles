@@ -1,0 +1,10 @@
+for dir in *(/); do
+    [[ -d "$dir/.git" ]] && (
+        cd "$dir" || exit
+        if [[ -z $(git status --porcelain --untracked-files=no) ]]; then
+            print "✅ $dir"
+        else
+            print "🔴 $dir"
+        fi
+    )
+done

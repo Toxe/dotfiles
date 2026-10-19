@@ -1,9 +1,12 @@
 [bar.default]
 center = [ "workspaces", "taskbar" ]
 concave_edge_corners = false
-end = [ "tray", "notifications", "clipboard", "bluetooth", "network", "volume", "clock" ]
+end = [ "tray", "notifications", "clipboard", "bluetooth", "network", "volume", "clock", "control-center" ]
 margin_ends = 0
 start = [ "launcher", "sysmon", "audio_visualizer" ]
+
+[control_center]
+hidden_tabs = [ "weather" ]
 
 [desktop_widgets]
 enabled = false
@@ -20,7 +23,7 @@ widget_order = []
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@HDMI-A-1" ]
+widget_order = [ "lockscreen-login-box@LVDS-1", "lockscreen-login-box@HDMI-A-1" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -50,12 +53,44 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1" ]
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@LVDS-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 720.0
+    cy = 718.0
+    output = "LVDS-1"
+    placement_height = 900.0
+    placement_width = 1440.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@LVDS-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
 
 [shell]
 polkit_agent = true
+
+    [shell.panel]
+    open_near_click_control_center = true
 
 [theme]
 mode = "light"
@@ -64,6 +99,9 @@ shell_mode = "dark"
 [wallpaper.default]
 path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
 
+[weather]
+enabled = false
+
 [widget.audio_visualizer]
 mirrored = false
 width = 48
@@ -71,6 +109,11 @@ width = 48
 [widget.clock]
 color = "secondary"
 format = "%d.%m.%Y %H:%M"
+
+[widget.control-center]
+capsule = true
+capsule_fill = "on_secondary"
+icon_color = "secondary"
 
 [widget.launcher]
 glyph = "keyboard"

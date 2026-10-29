@@ -42,7 +42,7 @@ widget_order = [ "lockscreen-login-box@LVDS-1", "lockscreen-login-box@HDMI-A-1" 
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -70,7 +70,7 @@ widget_order = [ "lockscreen-login-box@LVDS-1", "lockscreen-login-box@HDMI-A-1" 
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@LVDS-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -122,8 +122,10 @@ glyph = "keyboard"
 show_label = false
 
 [widget.sysmon]
+show_cpu_cores = true
 show_glyph = false
-visualization = "graph"
+show_value = false
+visualization = "gauge"
 
 [widget.workspaces]
 hide_when_empty = true

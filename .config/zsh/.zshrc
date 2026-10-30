@@ -1,4 +1,7 @@
 # general options
+export EDITOR=vim
+export VISUAL=vim
+
 setopt no_beep
 setopt no_list_beep
 

@@ -1,0 +1,10 @@
+[Unit]
+Description=HDMI Black Level
+
+[Service]
+Type=oneshot
+ExecStart=/home/toxe/.local/bin/hdmi-black-level.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target

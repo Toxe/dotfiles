@@ -8,8 +8,8 @@ eza_params=(--group --group-directories-first --time-style=long-iso --color-scal
 
 [[ $(eza --version) == *+git* ]] && eza_params=($eza_params --git)
 
-alias ls='eza $eza_params'
-alias ll='eza $eza_params -l'
+alias ls="eza $eza_params"
+alias ll="ls -l"
 
 # Debian only
 if [[ -f /etc/debian_version ]]; then

@@ -1,0 +1,716 @@
+{
+    "controllers": [
+        {
+            "active_mode": 0,
+            "colors": [
+                35071,
+                35071,
+                35071,
+                35071,
+                35071,
+                35071,
+                16774656,
+                11730688,
+                16752896,
+                16731392,
+                56831,
+                45823,
+                56831,
+                56831,
+                56831,
+                16763904,
+                16720384,
+                16720384,
+                65526,
+                56831,
+                65526,
+                65526,
+                65526,
+                65526,
+                16752896,
+                14548736,
+                16731392,
+                16711689,
+                65484,
+                65526,
+                65484,
+                65484,
+                65484,
+                16742144,
+                16763904,
+                16720384,
+                65441,
+                65484,
+                65441,
+                65441,
+                65441,
+                65357,
+                16763904,
+                16752896,
+                16711689,
+                16731392,
+                65357,
+                65441,
+                65399,
+                65399,
+                65399,
+                16752896,
+                16742144,
+                16711731,
+                16720384,
+                65314,
+                65357,
+                65357,
+                65357,
+                65357,
+                16742144,
+                14548736,
+                16731392,
+                16711689,
+                655104,
+                65314,
+                65314,
+                65314,
+                65314,
+                6225664,
+                14548736,
+                16774656,
+                16720384,
+                16731392,
+                3407616,
+                655104,
+                655104,
+                655104,
+                655104,
+                11730688,
+                16774656,
+                16752896,
+                16711689,
+                16720384,
+                8978176,
+                3407616,
+                3407616,
+                3407616,
+                3407616,
+                14548736,
+                16763904,
+                16711731,
+                16711689,
+                11730688,
+                6225664,
+                8978176,
+                8978176,
+                6225664,
+                14548736,
+                16752896,
+                16711731,
+                16731392,
+                14548736,
+                8978176,
+                11730688,
+                11730688,
+                11730688,
+                16763904,
+                16742144,
+                16711731,
+                16711689,
+                45823,
+                16774656,
+                0,
+                0,
+                0
+            ],
+            "description": "Corsair RGB Peripheral Device",
+            "display_name": "",
+            "flags": 1,
+            "leds": [
+                {
+                    "name": "Key: Escape"
+                },
+                {
+                    "name": "Key: `"
+                },
+                {
+                    "name": "Key: Tab"
+                },
+                {
+                    "name": "Key: Caps Lock"
+                },
+                {
+                    "name": "Key: Left Shift"
+                },
+                {
+                    "name": "Key: Left Control"
+                },
+                {
+                    "name": "Key: F12"
+                },
+                {
+                    "name": "Key: ="
+                },
+                {
+                    "name": "Key: Windows Lock"
+                },
+                {
+                    "name": "Key: Number Pad 7"
+                },
+                {
+                    "name": "Key: F1"
+                },
+                {
+                    "name": "Key: 1"
+                },
+                {
+                    "name": "Key: Q"
+                },
+                {
+                    "name": "Key: A"
+                },
+                {
+                    "name": "Key: Left Windows"
+                },
+                {
+                    "name": "Key: Print Screen"
+                },
+                {
+                    "name": "Key: Media Mute"
+                },
+                {
+                    "name": "Key: Number Pad 8"
+                },
+                {
+                    "name": "Key: F2"
+                },
+                {
+                    "name": "Key: 2"
+                },
+                {
+                    "name": "Key: W"
+                },
+                {
+                    "name": "Key: S"
+                },
+                {
+                    "name": "Key: Z"
+                },
+                {
+                    "name": "Key: Left Alt"
+                },
+                {
+                    "name": "Key: Scroll Lock"
+                },
+                {
+                    "name": "Key: Backspace"
+                },
+                {
+                    "name": "Key: Media Stop"
+                },
+                {
+                    "name": "Key: Number Pad 9"
+                },
+                {
+                    "name": "Key: F3"
+                },
+                {
+                    "name": "Key: 3"
+                },
+                {
+                    "name": "Key: E"
+                },
+                {
+                    "name": "Key: D"
+                },
+                {
+                    "name": "Key: X"
+                },
+                {
+                    "name": "Key: Pause/Break"
+                },
+                {
+                    "name": "Key: Delete"
+                },
+                {
+                    "name": "Key: Media Previous"
+                },
+                {
+                    "name": "Key: F4"
+                },
+                {
+                    "name": "Key: 4"
+                },
+                {
+                    "name": "Key: R"
+                },
+                {
+                    "name": "Key: F"
+                },
+                {
+                    "name": "Key: C"
+                },
+                {
+                    "name": "Key: Space"
+                },
+                {
+                    "name": "Key: Insert"
+                },
+                {
+                    "name": "Key: End"
+                },
+                {
+                    "name": "Key: Media Play/Pause"
+                },
+                {
+                    "name": "Key: Number Pad 4"
+                },
+                {
+                    "name": "Key: F5"
+                },
+                {
+                    "name": "Key: 5"
+                },
+                {
+                    "name": "Key: T"
+                },
+                {
+                    "name": "Key: G"
+                },
+                {
+                    "name": "Key: V"
+                },
+                {
+                    "name": "Key: Home"
+                },
+                {
+                    "name": "Key: Page Down"
+                },
+                {
+                    "name": "Key: Media Next"
+                },
+                {
+                    "name": "Key: Number Pad 5"
+                },
+                {
+                    "name": "Key: F6"
+                },
+                {
+                    "name": "Key: 6"
+                },
+                {
+                    "name": "Key: Y"
+                },
+                {
+                    "name": "Key: H"
+                },
+                {
+                    "name": "Key: B"
+                },
+                {
+                    "name": "Key: Page Up"
+                },
+                {
+                    "name": "Key: Right Shift"
+                },
+                {
+                    "name": "Key: Num Lock"
+                },
+                {
+                    "name": "Key: Number Pad 6"
+                },
+                {
+                    "name": "Key: F7"
+                },
+                {
+                    "name": "Key: 7"
+                },
+                {
+                    "name": "Key: U"
+                },
+                {
+                    "name": "Key: J"
+                },
+                {
+                    "name": "Key: N"
+                },
+                {
+                    "name": "Key: Right Alt"
+                },
+                {
+                    "name": "Key: ]"
+                },
+                {
+                    "name": "Key: Right Control"
+                },
+                {
+                    "name": "Key: Number Pad /"
+                },
+                {
+                    "name": "Key: Number Pad 1"
+                },
+                {
+                    "name": "Key: F8"
+                },
+                {
+                    "name": "Key: 8"
+                },
+                {
+                    "name": "Key: I"
+                },
+                {
+                    "name": "Key: K"
+                },
+                {
+                    "name": "Key: M"
+                },
+                {
+                    "name": "Key: Right Windows"
+                },
+                {
+                    "name": "Key: \\ (ANSI)"
+                },
+                {
+                    "name": "Key: Up Arrow"
+                },
+                {
+                    "name": "Key: Number Pad *"
+                },
+                {
+                    "name": "Key: Number Pad 2"
+                },
+                {
+                    "name": "Key: F9"
+                },
+                {
+                    "name": "Key: 9"
+                },
+                {
+                    "name": "Key: O"
+                },
+                {
+                    "name": "Key: L"
+                },
+                {
+                    "name": "Key: ,"
+                },
+                {
+                    "name": "Key: Menu"
+                },
+                {
+                    "name": "Key: Left Arrow"
+                },
+                {
+                    "name": "Key: Number Pad -"
+                },
+                {
+                    "name": "Key: Number Pad 3"
+                },
+                {
+                    "name": "Key: F10"
+                },
+                {
+                    "name": "Key: 0"
+                },
+                {
+                    "name": "Key: P"
+                },
+                {
+                    "name": "Key: ;"
+                },
+                {
+                    "name": "Key: ."
+                },
+                {
+                    "name": "Key: Enter"
+                },
+                {
+                    "name": "Key: Down Arrow"
+                },
+                {
+                    "name": "Key: Number Pad +"
+                },
+                {
+                    "name": "Key: Number Pad 0"
+                },
+                {
+                    "name": "Key: F11"
+                },
+                {
+                    "name": "Key: -"
+                },
+                {
+                    "name": "Key: ["
+                },
+                {
+                    "name": "Key: '"
+                },
+                {
+                    "name": "Key: /"
+                },
+                {
+                    "name": "Key: Brightness"
+                },
+                {
+                    "name": "Key: Right Arrow"
+                },
+                {
+                    "name": "Key: Number Pad Enter"
+                },
+                {
+                    "name": "Key: Number Pad ."
+                },
+                {
+                    "name": "Key: / (ISO)"
+                },
+                {
+                    "name": "Key: \\ (ISO)"
+                },
+                {
+                    "name": "Key: Logo Left"
+                },
+                {
+                    "name": "Key: Logo Right"
+                },
+                {
+                    "name": "Key: Profile"
+                }
+            ],
+            "location": "HID: /dev/hidraw5",
+            "modes": [
+                {
+                    "brightness": 0,
+                    "brightness_max": 0,
+                    "brightness_min": 0,
+                    "color_mode": 1,
+                    "colors_max": 0,
+                    "colors_min": 0,
+                    "direction": 0,
+                    "flags": 32,
+                    "name": "Direct",
+                    "speed": 0,
+                    "speed_max": 0,
+                    "speed_min": 0
+                }
+            ],
+            "name": "Corsair K70 LUX RGB",
+            "serial": "0B037024AEFE8106583BC062F5001941",
+            "type": 5,
+            "vendor": "Corsair",
+            "version": "3.8",
+            "zones": [
+                {
+                    "display_name": "",
+                    "flags": 0,
+                    "leds_count": 116,
+                    "leds_max": 116,
+                    "leds_min": 116,
+                    "matrix_map": {
+                        "height": 7,
+                        "map": [
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            107,
+                            8,
+                            4294967295,
+                            4294967295,
+                            16,
+                            4294967295,
+                            4294967295,
+                            0,
+                            4294967295,
+                            10,
+                            18,
+                            28,
+                            36,
+                            4294967295,
+                            46,
+                            55,
+                            64,
+                            74,
+                            4294967295,
+                            84,
+                            93,
+                            102,
+                            6,
+                            15,
+                            24,
+                            33,
+                            26,
+                            35,
+                            44,
+                            53,
+                            1,
+                            11,
+                            19,
+                            29,
+                            37,
+                            47,
+                            4294967295,
+                            56,
+                            65,
+                            75,
+                            85,
+                            94,
+                            103,
+                            7,
+                            25,
+                            4294967295,
+                            42,
+                            51,
+                            60,
+                            62,
+                            72,
+                            82,
+                            91,
+                            2,
+                            4294967295,
+                            12,
+                            20,
+                            30,
+                            38,
+                            48,
+                            57,
+                            66,
+                            76,
+                            86,
+                            4294967295,
+                            95,
+                            104,
+                            70,
+                            80,
+                            34,
+                            43,
+                            52,
+                            9,
+                            17,
+                            27,
+                            100,
+                            3,
+                            4294967295,
+                            13,
+                            21,
+                            31,
+                            39,
+                            49,
+                            58,
+                            67,
+                            77,
+                            87,
+                            4294967295,
+                            96,
+                            105,
+                            98,
+                            112,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            45,
+                            54,
+                            63,
+                            4294967295,
+                            4,
+                            111,
+                            4294967295,
+                            22,
+                            32,
+                            40,
+                            50,
+                            59,
+                            68,
+                            78,
+                            88,
+                            97,
+                            4294967295,
+                            106,
+                            61,
+                            4294967295,
+                            4294967295,
+                            81,
+                            4294967295,
+                            73,
+                            83,
+                            92,
+                            109,
+                            5,
+                            4294967295,
+                            14,
+                            23,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            41,
+                            4294967295,
+                            4294967295,
+                            4294967295,
+                            69,
+                            4294967295,
+                            79,
+                            89,
+                            71,
+                            90,
+                            99,
+                            108,
+                            101,
+                            4294967295,
+                            110,
+                            4294967295
+                        ],
+                        "width": 23
+                    },
+                    "name": "Keyboard",
+                    "type": 2
+                }
+            ]
+        }
+    ],
+    "plugins": {
+        "OpenRGB Effects Plugin": {
+            "Effects": [
+                {
+                    "AllowOnlyFirst": false,
+                    "AutoStart": true,
+                    "Brightness": 100,
+                    "ControllerZones": [
+                        {
+                            "description": "Corsair RGB Peripheral Device",
+                            "is_segment": false,
+                            "location": "HID: /dev/hidraw5",
+                            "name": "Corsair K70 LUX RGB",
+                            "reverse": false,
+                            "segment_idx": -1,
+                            "self_brightness": 100,
+                            "serial": "0B037024AEFE8106583BC062F5001941",
+                            "vendor": "Corsair",
+                            "version": "3.8",
+                            "zone_idx": 0
+                        }
+                    ],
+                    "CustomName": "",
+                    "EffectClassName": "RainbowWave",
+                    "FPS": 3,
+                    "RandomColors": false,
+                    "SelectAll": false,
+                    "Slider2Val": 10,
+                    "Speed": 1,
+                    "Temperature": 0,
+                    "Tint": 0
+                }
+            ],
+            "version": 2
+        }
+    },
+    "profile_name": "Keyboard",
+    "profile_version": 6
+}
